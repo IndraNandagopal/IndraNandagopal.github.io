@@ -1,0 +1,61 @@
+/*CSS used to Style boxes in the media query demo  */
+body{
+    background: lightgrey;
+
+}
+/* specify dimensions for all boxes in the page */
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.greenbox{
+    /* color a box green */
+    background: green;
+}
+
+.redbox{
+    /* color a box green */
+    background: red;
+}
+
+.bluebox{
+    /* color a box green */
+    background: blue;
+}
+
+.violetbox{
+    /* color a box green */
+    background: violet;
+}
+
+.yellowbox{
+    /* color a box green */
+    background: yellow;
+}
+
+/* use @media handle to implement a media query */
+@media (max-width: 600px)
+{
+    /* to modify green box */
+    .greenbox{
+        background: red;
+    }
+
+    /* modify the redbox */
+    .redbox{
+        border-radius: 50%;
+        border: solid 2px black;
+    }
+
+    /* make the bluebox do something fun! */
+    .bluebox{
+        transform:rotate(360deg);
+        transition: transform 2.0s ease-in;
+    }
+
+    /* make the violetbox disappear */
+    .violetbox{
+        display: none;
+    }
+}
